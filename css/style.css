@@ -63,3 +63,21 @@ body {
     position: absolute;
     left: -50px;
 }
+
+.accordion-right-column {
+    padding: 1rem;
+}
+
+.accordion-right-column h1 {
+    margin-bottom: 1rem;
+}
+
+.accordion-question {
+    background-color: red;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.accordion-answer {
+    display: none;
+}
