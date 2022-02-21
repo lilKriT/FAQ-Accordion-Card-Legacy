@@ -76,6 +76,18 @@ body {
     background-color: red;
     padding: 1rem;
     border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.accordion-question:after{
+    content: "";
+    background-image: url("/img/icon-arrow-down.svg");
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-repeat: no-repeat;
+    float: right;
+    margin-top: 10px;
 }
 
 .accordion-answer {
