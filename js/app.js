@@ -7,7 +7,11 @@ function addingOnClick() {
     let questions = document.getElementsByClassName("accordion-question");
     
     for (let i = 0; i < questions.length; i++) {
-        questions[i].onclick = popup;
+        questions[i].onclick = showAnswer;
     }
 }
 window.addEventListener('load', function (event) { addingOnClick(); }, false);
+
+function showAnswer(){
+    alert('Showing answer for nr:' + 1);
+}
