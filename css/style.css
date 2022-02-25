@@ -93,3 +93,7 @@ body {
 .accordion-answer {
     display: none;
 }
+
+.accordion-content.opened .accordion-answer {
+    display: block;
+}

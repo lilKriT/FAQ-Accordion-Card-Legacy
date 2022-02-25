@@ -5,13 +5,12 @@ function popup() {
 
 function addingOnClick() {
     let questions = document.getElementsByClassName("accordion-question");
+    // let questions = 
     
     for (let i = 0; i < questions.length; i++) {
-        questions[i].onclick = function(){showAnswer(i)};
+        questions[i].addEventListener("click", function() {
+            alert("Click");
+        });
     }
 }
 window.addEventListener('load', function (event) { addingOnClick(); }, false);
-
-function showAnswer(index){
-    alert('Showing answer for nr: ' + index);
-}
