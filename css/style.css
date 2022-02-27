@@ -94,6 +94,6 @@ body {
     display: none;
 }
 
-.accordion-content.opened .accordion-answer {
+.accordion-content.active .accordion-answer {
     display: block;
 }

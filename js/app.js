@@ -9,7 +9,8 @@ function addingOnClick() {
     
     for (let i = 0; i < questions.length; i++) {
         questions[i].addEventListener("click", function() {
-            alert("Click");
+            // alert("Click");
+            this.parentElement.classList.toggle("active");
         });
     }
 }
