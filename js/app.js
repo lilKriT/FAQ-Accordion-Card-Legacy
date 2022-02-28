@@ -9,9 +9,12 @@ function addingOnClick() {
     
     for (let i = 0; i < questions.length; i++) {
         questions[i].addEventListener("click", function() {
-            // alert("Click");
-            this.parentElement.classList.toggle("active");
+            accordionClick(this);
         });
     }
 }
 window.addEventListener('load', function (event) { addingOnClick(); }, false);
+
+function accordionClick(element){
+    element.parentElement.classList.toggle("active");
+}
