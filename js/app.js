@@ -6,15 +6,23 @@ function popup() {
 function addingOnClick() {
     let questions = document.getElementsByClassName("accordion-question");
     // let questions = 
-    
+
     for (let i = 0; i < questions.length; i++) {
-        questions[i].addEventListener("click", function() {
-            accordionClick(this);
+        questions[i].addEventListener("click", function () {
+            accordionClick(this, questions);
         });
     }
 }
 window.addEventListener('load', function (event) { addingOnClick(); }, false);
 
-function accordionClick(element){
-    element.parentElement.classList.toggle("active");
+function accordionClick(element, questions) {
+    if (element.parentElement.classList.contains("active")) {
+        element.parentElement.classList.toggle("active");
+        for (let i = 0; i < questions.length; i++) {
+            const q = questions[i];
+            q.parentElement.classList.toggle("active");
+        }
+    } else {
+        element.parentElement.classList.toggle("active");
+    }
 }
