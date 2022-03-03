@@ -18,11 +18,11 @@ window.addEventListener('load', function (event) { addingOnClick(); }, false);
 function accordionClick(element, questions) {
     if (element.parentElement.classList.contains("active")) {
         element.parentElement.classList.toggle("active");
+    } else {
         for (let i = 0; i < questions.length; i++) {
             const q = questions[i];
-            q.parentElement.classList.toggle("active");
+            q.parentElement.classList.remove("active");
         }
-    } else {
         element.parentElement.classList.toggle("active");
     }
 }
