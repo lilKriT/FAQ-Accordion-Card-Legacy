@@ -65,16 +65,20 @@ body {
 }
 
 .accordion-right-column {
-    padding: 1rem;
+    padding: 5rem 3rem;
 }
 
 .accordion-right-column h1 {
     margin-bottom: 1rem;
 }
 
+.accordion-content {
+    /* padding: 2rem 0rem; */
+}
+
 .accordion-question {
     /* background-color: red; */
-    padding: 1rem;
+    /* padding: 1rem; */
     border-bottom: 1px solid black;
     cursor: pointer;
     font-weight: 400;
