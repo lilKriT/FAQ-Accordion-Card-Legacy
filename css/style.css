@@ -73,13 +73,12 @@ body {
 }
 
 .accordion-content {
-    /* padding: 2rem 0rem; */
+    padding: 1.5rem 0rem;
+    /* background-color: red; */
+    border-bottom: 1px solid black;
 }
 
 .accordion-question {
-    /* background-color: red; */
-    /* padding: 1rem; */
-    border-bottom: 1px solid black;
     cursor: pointer;
     font-weight: 400;
 }
@@ -97,6 +96,7 @@ body {
 
 .accordion-answer {
     display: none;
+    margin-top: 1rem;
 }
 
 .accordion-content.active .accordion-answer {
