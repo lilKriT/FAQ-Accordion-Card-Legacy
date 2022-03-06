@@ -94,6 +94,10 @@ body {
     margin-top: 10px;
 }
 
+.accordion-content.active .accordion-question:after {
+    transform: rotateX(180deg);
+}
+
 .accordion-answer {
     display: none;
     margin-top: 1rem;
