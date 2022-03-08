@@ -1,8 +1,3 @@
-function popup() {
-    alert('You clicked on a question');
-}
-// window.addEventListener('load', function (event) { popup(); }, false);
-
 function addingOnClick() {
     let questions = document.getElementsByClassName("accordion-question");
     // let questions = 
