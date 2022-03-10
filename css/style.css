@@ -52,7 +52,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 
     background-image: url("/img/bg-pattern-desktop.svg");
     background-size: 80%;
@@ -64,6 +64,15 @@ body {
 .accordion-left-column img {
     position: absolute;
     left: -50px;
+}
+
+.accordion-box-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-5%);
+    overflow: visible;
+    z-index: 5;
 }
 
 .accordion-right-column {
