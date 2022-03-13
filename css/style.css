@@ -63,7 +63,7 @@ body {
 
 .accordion-left-column img {
     position: absolute;
-    left: -50px;
+    transform: translateX(-50%);
 }
 
 .accordion-box-image {
